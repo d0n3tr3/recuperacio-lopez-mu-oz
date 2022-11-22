@@ -1,42 +1,49 @@
-body{
+/* dlm  i make body backgroun with a image gradient and i put max width and height*/
+
+body {
     width: 1440px;
     height: 1024px;
     background-image: url(/img/Gradient-backgraund.avif);
     background-repeat: no-repeat;
 }
+/* dlm  i make the logo, the 2 buttons home and about*/
 
-.logo{
+.logo {
     font-family: 'Roboto', sans-serif;
     font-size: larger;
-    letter-spacing:10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    letter-spacing: 10px;
+    margin-left: 45%;
     color: rgb(64, 64, 250);
 }
-a{
+
+a {
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
     color: black;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
     margin: 2%;
-    
+
 }
-.title{
+/* dlm  i center the title and put a font*/
+
+.title {
     font-family: 'Raleway', sans-serif;
     align-items: center;
     letter-spacing: 30px;
     margin-left: 38%;
     margin-top: 10%;
 }
-p{
+
+p {
     height: 92px;
     width: 506px;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     margin-left: 36%;
 }
-.b1{
+/* dlm  i make the buttons better*/
+
+.b1 {
     margin-left: 36%;
     align-items: center;
     margin-top: 5%;
@@ -48,17 +55,19 @@ p{
     padding: 24px 57px 24px 40px;
     gap: 10px;
 }
-.b2{
-   height: 30px;
-   width: 80px;
-   background-color: black;
-   color: white;
-   border-radius: 40px;
-   border: black;
-   padding: 24px 57px 24px 40px;
-   gap: 10px;
+
+.b2 {
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    border: black;
+    padding: 24px 57px 24px 40px;
+    gap: 10px;
 }
-.b3{
+
+.b3 {
     padding: 16px;
     gap: 16px;
     background: rgba(255, 255, 255, 0.1);
@@ -66,5 +75,148 @@ p{
     box-shadow: 8px 8px 0px #333333;
     border-radius: 16px;
     font-size: small;
+
+
+
 }
 
+/* dlm  i make flex the page with media query*/
+
+@media screen and (max-width: 1200px) {
+    .logo{
+        margin-left: 45%;
+    }
+    .title {
+        font-size: large;
+        margin-left: 38%;
+        margin-top: 10%;
+    }
+
+    p {
+        font-size: 20px;
+        width: 400px;
+        height: 200px;
+        margin-left: 36%;
+    }
+    .b1{
+        padding: 24px 57px 24px 40px;
+        gap: 10px;
+        margin-left: 36%;
+    }
+    .b2{
+        padding: 24px 57px 24px 40px;
+        gap: 10px;
+    }
+    .b3{
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo{
+        margin-left: 30%;
+    }
+    .title {
+        font-size: large;
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+
+    p {
+        font-size: 15px;
+        width: 400px;
+        height: 200px;
+        margin-left: 30%;
+    }
+    .b1{
+        padding: 20px 45px 20px 30px;
+        gap: 8px;
+        margin-left: 30%;
+    }
+    .b2{
+        padding: 20px 45px 20px 30px;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .logo{
+        margin-left: 25%;
+    }
+    .title {
+        font-size: large;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+    p {
+        font-size: 15px;
+        width: 300px;
+        height: 150px;
+        margin-left: 25%;
+    }
+    .b1{
+        padding: 15px 35px 15px 25px;
+        gap: 7px;
+        margin-left: 25%;
+    }
+    .b2{
+        padding: 15px 35px 15px 25px;
+        gap: 7px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo{
+        margin-left: 15%;
+    }
+    .title {
+        font-size: medium;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+
+    p {
+        font-size: 15px;
+        width: 200px;
+        height: 100px;
+        margin-left: 15%;
+    }
+    .b1{
+        padding: 15px 25px 10px 20px;
+        gap: 6px;
+        margin-left: 15%;
+    }
+    .b2{
+        padding: 15px 25px 10px 20px;
+        gap: 6px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .logo{
+        margin-left: 10%;
+    }
+    .title {
+        font-size: medium;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    p {
+        font-size: 15px;
+        width: 200px;
+        height: 100px;
+        margin-left: 10%;
+    }
+    .b1{
+        padding: 7px 15px 5px 10px;
+        gap: 5px;
+        margin-left: 10%;
+        
+    }
+    .b2{
+        padding: 7px 15px 5px 10px;
+        gap: 5px;
+    }
+}
